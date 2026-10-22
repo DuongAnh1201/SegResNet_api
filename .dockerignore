@@ -1,0 +1,14 @@
+.venv/
+.git/
+__pycache__/
+*.pyc
+jobs/
+data/
+bundles/
+eval/
+notebooks/
+Task01_BrainTumour/
+*.tar
+*.stl
+check_tumor.stl
+.DS_Store

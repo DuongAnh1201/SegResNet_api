@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    image: brain3d-api:latest
+    container_name: brain3d-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ALLOWED_ORIGINS=http://localhost:3000,https://your-frontend.com
+    volumes:
+      - ./jobs:/app/jobs
+    restart: unless-stopped
